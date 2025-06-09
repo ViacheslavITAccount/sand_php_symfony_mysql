@@ -1,8 +1,0 @@
-DATABASE_URL="mysql://challenge:challenge_pass@127.0.0.1:3306/app?serverVersion=8.0.32&charset=utf8mb4"
-
-bin/console d:m:c
-
-
-    @docker exec -it fpm sh -lc 'bin/console c:c'
-    @echo "Run DB migrations..."
-	@docker exec -it fpm sh -lc 'bin/console d:m:m'
