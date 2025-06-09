@@ -18,7 +18,7 @@ build: ## Command build dependency and run application
 	@echo "Clear application cache..."
 	@docker exec -it fpm sh -lc 'bin/console c:c'
 	@echo "Please run command 'make migration' before using project"
-	@echo "Building application successfully finished and now application is available in browser 'http://localhost:8080'"
+	@echo "Building application successfully finished and now application is available in browser 'http://pet-project.sandbox.local' or 'https://pet-project.sandbox.local'"
 
 .PHONY: migration
 check-migration: ## Check connect to DB and available migrations
